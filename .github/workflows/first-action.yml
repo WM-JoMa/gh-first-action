@@ -1,0 +1,16 @@
+# its requiered to have a workflow name
+name: first-workflow
+# is needed also to specify on which kinda of event should be triggered
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    name: step-1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello world"
+      - name: Print Goodbye
+        run: echo "Good by, see u soon"
+    
+    
